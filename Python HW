@@ -7,3 +7,13 @@ def some_function_name_from_me():
 some_function_name_from_me() # I'm calling function here
 my_function() 
 
+#Week 2 HW
+
+bill = float(input("120"$))
+
+tip_percentage=float(input("10%"))
+tip_amount = 120*(15/100)
+
+total_bill = bill+tip_amount
+
+def(x+y+z)
