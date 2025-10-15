@@ -1,0 +1,8 @@
+def my_function():
+    print("Hello From my function!")
+
+def some_function_name_from_me():
+    print("Somebody called my function!")
+
+some_function_name_from_me() # I'm calling function here
+my_function() 
