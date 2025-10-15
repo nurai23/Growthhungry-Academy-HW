@@ -1,0 +1,9 @@
+
+bill = float(input("120"$))
+
+tip_percentage=float(input("10%"))
+tip_amount = 120*(15/100)
+
+total_bill = bill+tip_amount
+
+def(x+y+z)
