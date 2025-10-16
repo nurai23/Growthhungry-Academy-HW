@@ -8,3 +8,9 @@ print(f"Total bill (including tip): ${total_bill:.2f}")
 if tip_percentage >=20:
     print("Thank you very much!")
 
+total_bill=144
+number_of_people=3
+sum_for_each_person=total_bill/number_of_people
+
+print(f"Each person will pay:{sum_for_each_person}:")
+
