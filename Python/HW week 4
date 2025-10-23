@@ -13,4 +13,4 @@ sum_for_each_person=total_bill/number_of_people
 print(f"{'Jane', 'John', 'Sarah'}:{sum_for_each_person}:")
 
 if tip_percentage >=20:
-    print("Thank you for generoucity!")
+    print("Thank you for your generoucity!")
