@@ -1,0 +1,4 @@
+#basic calculator tip
+def calculator():
+    number_of_people=int(input("how many people are splitting the bill?\n"))
+    
