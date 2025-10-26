@@ -18,11 +18,11 @@ print(f"{'Jane', 'John', 'Sarah'}:{sum_for_each_person}:")
 def calculator():
     number_of_people=int(input("how many people are splitting the bill?\n"))
    
-   if number_of_people <= 2:
-print("to split a bill must be at least 2 people\n")
-   else:
-
-people_name=input("what are their names") 
+if number_of_people <= 2:
+      print("to split a bill must be at least 2 people")
+   
+else:
+ people_name=input("what are their names") 
 
 
 if tip_percentage >=20:
