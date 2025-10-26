@@ -24,6 +24,5 @@ if number_of_people <= 2:
 else:
  people_name=input("what are their names") 
 
-
 if tip_percentage >=20:
     print("Thank you for your generoucity!")
