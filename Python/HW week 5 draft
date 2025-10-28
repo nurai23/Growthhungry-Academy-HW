@@ -1,5 +1,17 @@
 def dispay_menu():
+
+
     print("1.Add a new task")
     print("2.View all tasks")
     print("3.Delete a task by its name")
     print("4.Delete a task by its number")
+
+    def Add_a_new_task(tasks):
+        "Adds a new task to the list"
+        task=input("Enter the task")
+
+    def View_all_tasks(tasks):
+        "Displays all tasks with their status."
+        if not tasks:
+            print("No tasks in the list")
+            return # ask why return   
