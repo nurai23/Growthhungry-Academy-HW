@@ -15,3 +15,10 @@ def dispay_menu():
         if not tasks:
             print("No tasks in the list")
             return # ask why return   
+        
+    def Delete_a_task_by_its_name(tasks):
+        "Delete a task from the list"
+        view_tasks(tasks)
+        if not tasks:
+            return
+        
