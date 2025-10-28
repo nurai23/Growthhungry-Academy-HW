@@ -1,5 +1,16 @@
-#basic calculator tip
-def calculator():
-    number_of_people=int(input("how many people are splitting the bill?\n"))
-   else:
-people_name=input("what are their names") 
+bill_amount = float(input("enter the amount: $"))
+tip_percentage = float(input("Enter the tip percentage: "))
+tip_amount = bill_amount * (tip_percentage / 100)
+total_bill = bill_amount + tip_amount
+print(f"\nTip amount: ${tip_amount:.2f}")
+print(f"Total bill (including tip): ${total_bill:.2f}")
+
+total_bill=bill_amount+tip_amount
+
+number_of_people=3
+sum_for_each_person=total_bill/number_of_people
+
+print(f"{'Jane', 'John', 'Sarah'}:{sum_for_each_person}:")
+
+if tip_percentage >=20:
+    print("Thank you very much!")
