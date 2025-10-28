@@ -22,3 +22,9 @@ def dispay_menu():
         if not tasks:
             return
         
+    def Delete_a_task_by_its_number(tasks):
+        "Delete a task by its number"
+        view_tasks(tasks)
+        if not tasks:
+            return
+        
