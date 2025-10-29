@@ -1,0 +1,5 @@
+def number_guessing_game():
+ "guessing_game"
+print("number of guessing game!")
+print("Random number between 1 and 100")
+
