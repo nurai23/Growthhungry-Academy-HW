@@ -3,3 +3,19 @@ def number_guessing_game():
 print("number of guessing game!")
 print("Random number between 1 and 100")
 
+#The user has a limited number of attempts to guess it
+
+#need to generate a random number 1 and 100
+
+user_guess=int(input("take a guess:"))
+
+if user_guess
+print("Your guess is too high")
+
+elif user_guess
+print("Your guess is too low")
+
+else user_guess
+print("Your guess is correct")
+
+Break # stop as soon as the guess is correct
