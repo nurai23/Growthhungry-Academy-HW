@@ -3,3 +3,14 @@ def word_count(text):
 
     #write a program that asks the user for a sentence.The program should then count 
     #the occurence of each word in the sentence and display the result as a dictionary
+
+#Sentences examples
+
+sentence1="Happy wife, happy life"
+word_count1=count_words1(sentence1)
+
+sentence2="Each day learn something new"
+word_count2=count_words2(sentence2)
+
+sentence3="Learn python everyday"
+word_count3=count_words3(sentence3)
