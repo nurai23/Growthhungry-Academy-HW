@@ -1,0 +1,5 @@
+def word_count(text):
+    "word count in the given sentence"
+
+    #write a program that asks the user for a sentence.The program should then count 
+    #the occurence of each word in the sentence and display the result as a dictionary
