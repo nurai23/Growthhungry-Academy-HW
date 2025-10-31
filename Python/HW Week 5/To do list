@@ -28,7 +28,7 @@ def dispay_menu():
         if not tasks:
             return
         
-    choice=input("Select your choice(1-4):")
+    choice=input("Select your choice(1-5):")
     if choice == "1":
         Add_a_new_task
     elif choice == "2":
@@ -37,5 +37,8 @@ def dispay_menu():
         Delete_a_task_by_its_name 
     elif choice =="4":
         Delete_a_task_by_its_number
+    "break"
+else:
+print("Invalid task. Please select from 1 and 4")
 
 
