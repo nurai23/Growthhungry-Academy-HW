@@ -29,10 +29,10 @@ elif choice == "3":
             print(f"Task '{removed_task}' removed.")
         else:
             print("Invalid task number. ")
-        break
 elif choice == "4":
          print("Goodbye!") 
-         
+
+           
 else:
      print("Invalid option")
 
