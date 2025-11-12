@@ -7,15 +7,14 @@ print("Random number between 1 and 100")
 
 #need to generate a random number 1 and 100
 
-user_guess=int(input("take a guess:"))
+import random
+number = random.randint(1,100)
+guess = 0
+while guess != number:
+ 
+ guess = int(input("Enter guess:"))
 
-if user_guess
-print("Your guess is too high")
-
-elif user_guess
-print("Your guess is too low")
-
-else user_guess
-print("Your guess is correct")
-
-Break # stop as soon as the guess is correct
+if (guess < number):
+ print("Guess higher!")
+elif (guess > number):
+ print ("Guess lower!")
