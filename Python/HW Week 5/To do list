@@ -2,6 +2,7 @@ tasks=[]
 
 def dispay_menu():
 
+    print("n\ To-do-list")
     print("1.Add a new task")
     print("2.View all tasks")
     print("3.Delete a task by its name")
@@ -9,15 +10,15 @@ def dispay_menu():
 
     def Add_a_new_task():
         "Adds a new task to the list"
-        task=input("Enter the task")
-        task.append({"task:task, completed":False})
+        task=input("Enter the task: ")
+        task.append({"task: task, completed":False})
         print(f"Task '{task}' added.")
 
     def View_all_tasks():
         "Displays all tasks with their status."
         if not tasks:
             print("No tasks in the list")
-            return # ask why return   
+            return    
         
     def Delete_a_task_by_its_name():
         "Delete a task from the list"
