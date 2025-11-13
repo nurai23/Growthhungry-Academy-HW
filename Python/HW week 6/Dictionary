@@ -1,22 +1,30 @@
-def word_count(text):
-    "word count in a given sentence"
-    words=text.split() 
-    print(words)
+#Dictionary
+
+capitals = {"Kyrgyzstan" : "Bishkek", 
+           "Kazakhstan" : "Astana", 
+           "Uzbekistan" : "Tashkent", 
+           "Russia" : "Moscow", 
+           "China" : "Beijing" }
+
+print(capitals.get("Kyrgyzstan"))
+print(capitals)
+
+#word counter
+
+def word_counter(sentence):
+    words = sentence.split() 
     return len(words)
+def main():
+    sentence = input("Enter some sentence: ")
+    print("Word count:",word_counter(sentence))
+
+main()
+    
 
     #write a program that asks the user for a sentence.The program should then count 
     #the occurence of each word in the sentence and display the result as a dictionary
 
-#Sentences examples
 
-sentence1="Happy wife, happy life"
-word_count1=word_count(sentence1)
-
-sentence2="Each day learn something new"
-word_count2=word_count(sentence2)
-
-sentence3="Learn python everyday"
-word_count3=word_count(sentence3)
 
 
 
