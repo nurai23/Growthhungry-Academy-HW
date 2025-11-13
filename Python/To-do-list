@@ -15,17 +15,15 @@ def view_tasks():
 def delete_task():
          view_tasks()
         
-    
-           
+               
 task_index = int(input("Enter the number to delete: ")) - 1
 if  0 <= task_index < len(tasks):
            del tasks[task_index]
            print("Task deleted!")
 else:
               print("Invalid task number.")
-         
+     
        
-
 print("Please enter a valid number.")
 print("n\ to_do_list:")
 print("1. Add task")
@@ -44,7 +42,7 @@ elif choice == '3':
                 print("remove_task")
 elif choice =='4':
          print("Goodbye!")
-         
+                
 
 else: print("Invalid option. Please enter a number from 1 to 4")
     
