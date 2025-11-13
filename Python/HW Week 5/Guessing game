@@ -2,16 +2,16 @@ import random
 number = random.randint(1,100)
 guess = 0
 
-print(f"This is guessing game")
+print(f"This is a guessing game")
 print("My guess is between 1 and 100")
 print("Can you find it?")
 while guess != number:
  
- guess = int(input("Enter guess:"))
+  guess = int(input("Enter Guess:"))
 
-if (guess < number):
- print("Guess higher!")
-elif (guess > number):
- print ("Guess lower!")
+  if (guess < number):
+   print("Guess higher please!")
+  elif (guess > number):
+   print ("Guess lower please!")
 else:
- print("Your guess is correct!")
+ print("Your guess is correct! Congratulations!")
