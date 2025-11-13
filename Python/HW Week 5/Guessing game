@@ -1,15 +1,6 @@
-def number_guessing_game():
- "guessing_game"
-print("number of guessing game!")
-print("Random number between 1 and 100")
-
-#The user has a limited number of attempts to guess it
-
-#need to generate a random number 1 and 100
-
 import random
 number = random.randint(1,100)
-guess = 0
+guess = 45
 while guess != number:
  
  guess = int(input("Enter guess:"))
@@ -18,3 +9,5 @@ if (guess < number):
  print("Guess higher!")
 elif (guess > number):
  print ("Guess lower!")
+else:
+ print("Your guess is correct!")
