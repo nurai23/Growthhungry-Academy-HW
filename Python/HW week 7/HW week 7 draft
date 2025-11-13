@@ -1,0 +1,14 @@
+sentence = "I love Kyrgyzstan"
+words = sentence.split()
+word_length = []
+for word in words:
+    if word != "Kyrgyzstan":
+     word_length.append(len(word))
+     print(words)
+     print(word_length)
+
+sentence =  "I love Kyrgyzstan very much"
+words = sentence.split()
+word_length = [len(word) for  word in words if word != "much"]
+print(word)
+print(word_length)   
