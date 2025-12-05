@@ -1,11 +1,27 @@
 
 class bank_account:
-  name = None
-  balance = None
+  
+  def init (self, bank_account_owner, initial_balance=0):
+   self.bank_account_owner = bank_account_owner
+   self.balance = initial_balance
+   print(f"Account created for {self.bank_account_owner} with balance"):
 
-  def set_data(self, name, balance):
-    self.name = name
-    self.balance = balance
+  def deposit(self, amount):
+    if amount > 0:
+      self.balance += amount
+      print(f"Deposited ${amount}. New balance: ${self.balance}"):
+    else:
+      print("Deposit amount must be positive")
+      
+    def withdraw(self, amount):
+      if amount >0:
+        if self.balance >= amount:
+          self.balance -= amount
+          print(f"Withdrew ${amount}. New balance: ${self.balance}"):
+                
+          print("Insufficient funds for withdrawal.")
+          
+
 
 
 bank_account1 = bank_account()
