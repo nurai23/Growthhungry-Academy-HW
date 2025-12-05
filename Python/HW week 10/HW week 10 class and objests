@@ -1,2 +1,25 @@
-#Simple bank account Class. Create a Bank account class. Each account should have an owner name and balance
-#The class should have methods to deposit (money) withdraw money dont allow withdrawal if funds are insufficient and display_balance
+#Simple bank account Class. Create a Bank account class. 
+#Each account should have an owner name and balance
+#The class should have methods to deposit (money)
+# withdraw money dont allow withdrawal 
+#if funds are insufficient and display_balance
+
+class bank account:
+
+name = None
+balance = None
+
+bank account1 = bank account()
+bank account1.name = Nurai
+bank account1.balance = $3000
+
+
+bank account2 = bank account()
+bank account2.name = Ailin
+bank account2.balance = $5000
+
+bank account3 = bank account()
+bank account3.name = Aidar
+bank account3.balance = $4000
+
+print(bank account1)
