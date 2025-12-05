@@ -1,0 +1,2 @@
+#Simple bank account Class. Create a Bank account class. Each account should have an owner name and balance
+#The class should have methods to deposit (money) withdraw money dont allow withdrawal if funds are insufficient and display_balance
