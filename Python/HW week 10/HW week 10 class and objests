@@ -4,12 +4,12 @@ class bank_account:
   def init (self, bank_account_owner, initial_balance=0):
    self.bank_account_owner = bank_account_owner
    self.balance = initial_balance
-   print(f"Account created for {self.bank_account_owner} with balance"):
+   print(f"Account created for {self.bank_account_owner} with balance")
 
   def deposit(self, amount):
     if amount > 0:
       self.balance += amount
-      print(f"Deposited ${amount}. New balance: ${self.balance}"):
+      print(f"Deposited ${amount}. New balance: ${self.balance}")
     else:
       print("Deposit amount must be positive")
       
@@ -17,27 +17,31 @@ class bank_account:
       if amount >0:
         if self.balance >= amount:
           self.balance -= amount
-          print(f"Withdrew ${amount}. New balance: ${self.balance}"):
-                
+          print(f"Withdrew ${amount}. New balance: ${self.balance}")
+        else:     
           print("Insufficient funds for withdrawal.")
-          
+      else: 
+        print("Withdrawal amount must be positive") 
 
 
+def display_balance(self):
+  #Show the current balance
+  print(f"Current balance for {self.bank_account_owner}: ${self.balance}")
 
-bank_account1 = bank_account()
-bank_account1.set_data("Nurai", 3000)
-bank_account1.name = "Nurai"
-bank_account1.balance = 3000
+#1 bank account owner
+my_account = bank_account("Nurai", 100)
+print("-" * 50)
 
+my_account.deposit(50)
+my_account.withdraw(30)
+my_account.display_balance()
+print("-" * 20)
 
-bank_account2 = bank_account()
-bank_account.set_data("Ailin", 5000)
-bank_account2.name = "Ailin"
-bank_account2.balance = 5000
+my_account.withdraw(150)
+print("-" *20)
 
-bank_account3 = bank_account()
-bank_account3.set_data("Aidar", 4000)
-bank_account3.name = "Aidar"
-bank_account3.balance = 4000
+#2 bank account owner
+another_account = bank_account("Ailin")
+another_account.deposit(250)
+another_account.display_balance
 
-print(bank_account1)
