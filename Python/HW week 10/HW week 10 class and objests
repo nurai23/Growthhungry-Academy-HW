@@ -29,22 +29,19 @@ def display_balance(self):
   print(f"Current balance for {self.bank_account_owner}: ${self.balance}")
 
 #1 bank account owner
-my_account = bank_account()
-print("-")
+my_account = bank_account("Nurai", 100)
+print("-" * 20)
 
-my_account.deposit()
-my_account.withdraw()
+my_account.deposit(50)
+my_account.withdraw(30)
 my_account.display_balance()
-print("-")
+print("-" * 20)
 
-my_account.withdraw()
-print("-")
+my_account.withdraw(200)
+print("-" *20)
 
 #2 bank account owner
 another_account = bank_account("Ailin")
 another_account.deposit(250)
 another_account.display_balance
 
-def display_balance(self):
-  print(f"name:{self.name}")
-  print(f"Balance: {self.balance}")
