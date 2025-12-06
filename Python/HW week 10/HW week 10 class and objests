@@ -34,15 +34,22 @@ my_account = bank_account("Nurai", 10000) # Creates Nurai's account with 100
 print("-" * 20)
 
 my_account.deposit(3000)
-my_account.withdraw(200)
+my_account.withdraw(2000)
 my_account.display_balance() 
 print("-" * 20)
-
-my_account.withdraw(200)
-print("-" *20)
 
 #2 bank account owner
 another_account = bank_account("Ailin", 6000)
 another_account.deposit(2500)
 another_account.display_balance
 
+another_account.withdraw(1500)
+print("-" *20)
+
+#3 bank account owner
+another_account = bank_account("Aidar", 8000)
+another_account.deposit(1500)
+another_account.display_balance
+
+another_account.withdraw(2000)
+print("-" *20)
