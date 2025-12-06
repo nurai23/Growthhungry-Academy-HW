@@ -39,7 +39,7 @@ my_account.display_balance()
 print("-" * 20)
 
 #2 bank account owner
-another_account = bank_account("Ailin",8000)
+another_account = bank_account("Ailin",9000)
 another_account.deposit(2500)
 another_account.display_balance
 
@@ -47,7 +47,7 @@ another_account.withdraw(1500)
 print("-" *20)
 
 #3 bank account owner
-another_account = bank_account("Aidar", 9000)
+another_account = bank_account("Aidar", 6000)
 another_account.deposit(1500)
 another_account.display_balance
 
