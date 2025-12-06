@@ -33,7 +33,7 @@ class bank_account:
 my_account = bank_account("Nurai", 10000) # Creates Nurai's account with 100 
 print("-" * 20)
 
-my_account.deposit(5000)
+my_account.deposit(3000)
 my_account.withdraw(200)
 my_account.display_balance() 
 print("-" * 20)
