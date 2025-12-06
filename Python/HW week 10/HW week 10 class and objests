@@ -30,11 +30,11 @@ class bank_account:
     print(f"Current balance for {self.account_owner}: ${self.balance}")
 
 #1 bank account owner
-my_account = bank_account("Nurai", 15000) # Creates Nurai's account with 100 
+my_account = bank_account("Nurai", 10000) # Creates Nurai's account with 100 
 print("-" * 20)
 
 my_account.deposit(3000)
-my_account.withdraw(2000)
+my_account.withdraw(1000)
 my_account.display_balance() 
 print("-" * 20)
 
