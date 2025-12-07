@@ -7,11 +7,12 @@ HOST = "127.0.0.1"
 PORT = 65432
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((HOST, PORT))
+    
+    s.connect((HOST, PORT)) #connection between server and client
 
     #Data is exchanged
     
-    s.sendall(b"Growthhungry")
+    s.sendall(b"Growthhungry is cool")
     data = s.recv(1024)
 
-print(f"Received {data}")
+print(f"Received from server: {data.decode()}")
