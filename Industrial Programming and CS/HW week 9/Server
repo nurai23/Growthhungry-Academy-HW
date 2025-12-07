@@ -4,15 +4,15 @@ import socket
 
 # 1 Server's set up
 
-HOST = "127.0.0.1"
+HOST = '127.0.0.1'
 
-PORT = 65432
+PORT = 12398
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
-    s.listen()
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
+    server.bind((HOST, PORT))
+    server.listen()
     print(f"Server listening on {HOST}:{PORT}")
-    conn, addr = s.accept()
+    conn, addr = server.accept()
 
 # 3 Data is exchanged
 with conn:
@@ -22,4 +22,4 @@ with conn:
      if not data:
       break
      print(f"Receveived from Client: {data.decode()} ")
-    conn.sendall(data)
+    conn.sendall(b"Hello from Growthhungry")

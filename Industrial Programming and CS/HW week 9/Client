@@ -1,18 +1,20 @@
 # Client initiates a connection
 
-
 import socket
 
 HOST = "127.0.0.1"
-PORT = 65432
+PORT = 12398
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
-    s.connect((HOST, PORT)) #connection between server and client
+client_socket.connect(("HOST", 12398)) #connection between server and client
+print("Connected to the server")
 
     #Data is exchanged
     
-    s.sendall(b"Growthhungry is cool")
-    data = s.recv(1024)
+client_socket.send(b"Growthhungry is cool".encode())
+data = client_socket.recv(1024).decode()
 
-print(f"Received from server: {data.decode()}")
+print(f"Received from server: {data.decode}")
+
+client_socket.close()
