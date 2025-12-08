@@ -18,8 +18,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
 with conn:
     print(f"Connected by {addr}")
     while True:
-     data = conn.recv(1024)
-     if not data:
-      break
-     print(f"Receveived from Client: {data.decode()} ")
-    conn.sendall(b"Hello from Growthhungry")
+     conn.send('Thanks for connection'.encode())
+
+     print(f"Receveived from Client: {addr} ")
+
+     conn.close()
+     break
+    
