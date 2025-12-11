@@ -1,0 +1,1 @@
+def linear_search(data_list, target):
