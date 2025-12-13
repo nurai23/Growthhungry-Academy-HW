@@ -1,1 +1,4 @@
 def linear_search(data_list, target):
+    for index, item in enumerate(data_list):
+        if item == target:
+            return index
