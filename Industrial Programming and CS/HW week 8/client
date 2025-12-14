@@ -1,11 +1,17 @@
+# Client initiates a connection
 
-GET http://localhost:8000/api/posts
-###
-POST http://localhost:8000/api/posts
-Content-Type: application/json
 
-{
-    "title": "My New Post", 
-    "content": "This is the content of my new post."
+import socket
 
-}
+HOST = "127.0.0.1"
+PORT = 65432
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+
+    #Data is exchanged
+    
+    s.sendall(b"Growthhungry")
+    data = s.recv(1024)
+
+print(f"Received {data}")
