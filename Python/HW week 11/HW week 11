@@ -2,3 +2,8 @@ def linear_search(data_list, target):
     for index, item in enumerate(data_list):
         if item == target:
             return index
+    return  -1 
+list1 = [15, 25, 35, 45, 55, 65]
+target = 45
+result1 = linear_search(list1, target)
+
