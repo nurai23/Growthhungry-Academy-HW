@@ -1,5 +1,5 @@
 class Solution:
- List = ["flower","flow","flight"]
+ #List = ["flower","flow","flight"]
  def longestCommonPrefix(self, strs: List[str]) -> str:
   prefix = ""
   for chars in zip(*strs):
