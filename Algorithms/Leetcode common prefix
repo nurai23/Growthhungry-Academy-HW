@@ -1,6 +1,6 @@
 class Solution:
- #List = ["flower","flow","flight"]
- def longestCommonPrefix(self, strs: List[str]) -> str:
+
+ def longestCommonPrefix(strs: List[str]) -> str:
   prefix = ""
   for chars in zip(*strs):
    if len(set(chars)) == 1:
@@ -8,3 +8,5 @@ class Solution:
    else:
     break
    return prefix
+  x=["country", "course", "courage"]
+print(longestCommonPrefix)

@@ -5,5 +5,5 @@ def twoSum(nums: list[int], target: int) -> list[int]:
             if nums[i] +nums[j] == target:
              return [i, j]
     return[]
-x=[5,10,20]
-print( twoSum(nums=x, target=30))
+x=[45,50,10]
+print( twoSum(nums=x, target=95))
