@@ -9,4 +9,4 @@ class Solution:
     break
    return prefix
   x=["country", "course", "courage"]
-print(longestCommonPrefix)
+ print(longestCommonPrefix) 
