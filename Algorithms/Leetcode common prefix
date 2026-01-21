@@ -30,5 +30,5 @@ class Solution:
             break
     return prefix  # Moved outside the loop
 
-  a = ["country", "course", "courage"]
+  a = ["navy", "navigation", "navigator"]
   print(longestCommonPrefix(a))
