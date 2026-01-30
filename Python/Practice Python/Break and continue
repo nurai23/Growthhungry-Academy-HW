@@ -7,3 +7,10 @@ for i in range(5):
     if i == 3:
         continue
     print(i)    
+
+#age = input("age: ")
+#print(age + 1)
+
+age = int(input("age: "))
+print(age + 1)
+
