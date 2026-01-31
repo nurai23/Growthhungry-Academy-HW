@@ -14,3 +14,13 @@ for i in range(5):
 age = int(input("age: "))
 print(age + 1)
 
+age = 18
+
+if age == 18:
+    print("Совершеннолетний")
+x = 10
+if x > 5:
+    print("Больше 5")
+
+num = input("Введите число: ") 
+print(num + 5)
