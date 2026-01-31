@@ -1,26 +1,31 @@
-for i in range(5):
-    if i == 3:
-        break
-    print(i)
+#for i in range(5):
+   # if i == 3:
+        #break
+    #print(i)
 
-for i in range(5):
-    if i == 3:
-        continue
-    print(i)    
+#for i in range(5):
+   # if i == 3:
+       # continue
+    #print(i)    
 
 #age = input("age: ")
 #print(age + 1)
 
-age = int(input("age: "))
-print(age + 1)
+#age = int(input("age: "))
+#print(age + 1)
 
-age = 18
+#age = 18
 
-if age == 18:
-    print("Совершеннолетний")
-x = 10
-if x > 5:
-    print("Больше 5")
+#if age == 18:
+    #print("Совершеннолетний")
+#x = 10
+#if x > 5:
+    #print("Больше 5")
 
-num = int(input("Введите число: ")) 
-print(num + 5)
+ #num = int(input("Введите число: ")) 
+#print(num + 5)
+
+i = 1
+while i <= 3:
+    print(i)
+    i+=1
