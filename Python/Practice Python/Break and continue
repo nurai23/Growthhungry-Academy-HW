@@ -22,5 +22,5 @@ x = 10
 if x > 5:
     print("Больше 5")
 
-num = input("Введите число: ") 
+num = int(input("Введите число: ")) 
 print(num + 5)
