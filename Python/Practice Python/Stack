@@ -1,0 +1,8 @@
+def main():
+    print_hello()  # Вызов 1
+
+def print_hello():
+    say_name()     # Вызов 2
+
+def say_name():
+    print("Alex")
