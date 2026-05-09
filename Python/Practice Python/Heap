@@ -1,0 +1,21 @@
+
+import heapq
+
+lists = [[10, 15, 20], [11, 12, 13], [9, 18, 19]]
+heap = []
+
+# Кладем в кучу (значение, индекс_списка, индекс_элемента)
+for i in range(len(lists)):
+    heapq.heappush(heap, (lists[i][0], i, 0))
+
+result = []
+while heap:
+    val, list_idx, element_idx = heapq.heappop(heap)
+    result.append(val)
+    
+    # Если в этом списке еще есть элементы, кладем следующий
+    if element_idx + 1 < len(lists[list_idx]):
+        next_tuple = (lists[list_idx][element_idx + 1], list_idx, element_idx + 1)
+        heapq.heappush(heap, next_tuple)
+
+print(result) # [9, 10, 11, 12, 13, 15, 18, 19, 20]
