@@ -1,0 +1,33 @@
+def minOperations(nums1, nums2) -> int:
+    # If the range of sums doesn't overlap, it's impossible
+    # Min sum is len * 1, Max sum is len * 6
+    if len(nums1) * 6 < len(nums2) or len(nums2) * 6 < len(nums1):
+        return -1
+    
+    sum1, sum2 = sum(nums1), sum(nums2)
+    if sum1 > sum2:
+        # We want nums1 to be the smaller sum array for simplicity
+        nums1, nums2 = nums2, nums1
+        sum1, sum2 = sum2, sum1
+    
+    diff = sum2 - sum1
+    # Potential gains: 
+    # From nums1 (small sum): how much can we increase? (6 - x)
+    # From nums2 (large sum): how much can we decrease? (x - 1)
+    gains = []
+    for x in nums1:
+        gains.append(6 - x)
+    for x in nums2:
+        gains.append(x - 1)
+    
+    # Sort gains descending to be greedy
+    gains.sort(reverse=True)
+    
+    ops = 0
+    for g in gains:
+        if diff <= 0:
+            break
+        diff -= g
+        ops += 1
+        
+    return ops if diff <= 0 else -1
