@@ -1,0 +1,12 @@
+from typing import List
+def longestCommonPrefix(strs: List[str]) -> str:
+    prefix = ""
+    for chars in zip(*strs):
+        if len(set(chars)) == 1:
+            prefix += chars[0] 
+        else:
+            break
+    return prefix
+a = ["country", "countrse", "countrage"]
+
+print(longestCommonPrefix(a))
