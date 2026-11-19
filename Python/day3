@@ -1,0 +1,10 @@
+hours = float(input("How many hours did you study?"))
+is_weekend = False
+if hours >= 3 and not is_weekend:
+    print("Good job!")
+elif hours > 0 and hours < 3:
+    print("Good start, but need more time to practice!")
+elif is_weekend:
+    print("Today is a weekend, have a rest")
+else:
+    print("Let's open a little bit and work")        

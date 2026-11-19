@@ -1,0 +1,10 @@
+user_name = "Nurchik"
+daily_hours = 5
+
+print(f"Hello, {user_name}! Today we start learing Pythong {daily_hours} hours.")
+
+city = input("Where are you from?")
+print(f" Great, Greeting from Bishkek {city} !")
+
+hobby = input("My hobby is Swimming")
+print(f"Cool {hobby}!")

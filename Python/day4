@@ -1,0 +1,10 @@
+name = input("What is your name?") 
+goal_hours = float(input("how many hours you would like to study?"))
+completed_hours = float(input("how many hours have you completed already?"))
+Target_hours = goal_hours - completed_hours 
+if Target_hours <=0: 
+ print("fGood job! {name} you are already achieved your goals")
+elif Target_hours > 6:
+ print("f{name}You are close to finish")
+else:
+ print(f"{name} You have {Target_hours} hours, please continue")

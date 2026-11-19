@@ -7,6 +7,6 @@ def longestCommonPrefix(strs: List[str]) -> str:
         else:
             break
     return prefix
-a = ["country", "countrse", "countrage"]
+a = ["country", "countrse", "countrage", "count"]
 
 print(longestCommonPrefix(a))

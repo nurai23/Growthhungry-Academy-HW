@@ -1,0 +1,7 @@
+Sum_bill = float(input("What is the bill's sum?"))
+Tip_percentage = float(input("What is the tip percentage?"))
+Total_people = int(input("how many people on the table?"))
+Total_sum = Sum_bill + (Sum_bill * Tip_percentage/100)
+print(Total_sum)
+Total_sum_for_each = Total_sum/Total_people
+print(f"Each person has to pay{Total_sum_for_each}")
