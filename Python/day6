@@ -1,0 +1,8 @@
+login_name = input("what is the login name?").strip
+password = input("what is the password")
+if len(password) < 8:
+ print("Error: login_name is too short")
+elif login_name == password:
+ print("Error: The password cannot be the same as login_name")
+else:
+ print("The registration was successfull! Congratulations!")
