@@ -1,0 +1,18 @@
+planet = input("What is the transit planet?").strip()
+house = int(input("Which house goes the transit planet (1-12)?"))
+degree = float(input("which degree?"))
+has_natal = input("Does it have the natal planet in this house (yes/no): ").strip.lower()
+
+if house in (1, 4, 7, 10):
+ zone = "kendra (Active good house)"
+elif house in (5, 9):
+ zone = "trikona (Good fortune)"
+elif house in (6, 8, 12):
+ zone = "dusthana (difficulties and problems)"
+else:
+ zone = "upachai"
+print(f"\n Transit : {planet} in {house} ({zone} degree: {degree}") 
+if degree < 3.0 or degree > 27.0:
+ print("check the planet is close to edge, please check again")
+if has_natal == "yes":
+ print("Important: It touches the natal point")

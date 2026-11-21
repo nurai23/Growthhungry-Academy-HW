@@ -1,0 +1,6 @@
+age = input("How old are you?")
+if age >= 18 == True:
+    print("You are allowed to enter, Enjoy the movie!")
+elif age < 18 == False:
+ print("You are not allowed to enter, Please leave!")
+
