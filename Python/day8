@@ -1,2 +1,9 @@
 traffic_light = input("what is the color or traffic light?").strip().lower()
-if traffic_light = input()
+if traffic_light == "red":
+ print("Stop! Movement is forbidden!")
+elif traffic_light == "yellow":
+ print("Be prepared")
+elif traffic_light == "green":
+ print("Movement is allowed")
+else:
+ print("The traffic light is broken, be careful!")  
