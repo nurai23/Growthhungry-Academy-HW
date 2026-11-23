@@ -1,0 +1,10 @@
+price = float(input("what is the price of your purchase?"))
+if price >= 5000:
+    print("your discount is 20%")
+elif price >= 2000:
+    print("your discount is 10%")
+elif price >= 1000:
+    print("your discount is 5%")
+else:
+    print("no dicount, make your purchase more than 1000")
+                
