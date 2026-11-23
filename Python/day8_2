@@ -1,0 +1,9 @@
+tempurature = int(input("what is the temperature outside?"))
+if tempurature <0:
+    print("it is cold! wear your jacket and hat!")
+elif tempurature <=15:
+    print("it is a bit cold, wear your jacket!")
+elif tempurature <= 25:
+    print("nice weather! wear just light jacket!")
+else:
+    print("it is hot! wear your t-shirt")     
