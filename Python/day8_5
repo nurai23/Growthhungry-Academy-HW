@@ -1,0 +1,4 @@
+name = input("what is your name and surname?").strip().lower()
+name = str(input("what is your second name?")).title()
+print("name")
+
