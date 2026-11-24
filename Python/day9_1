@@ -1,3 +1,5 @@
-age = 35 
-message = "I am +str(age) + years old"
-print("message")
+email = input("what is your email address?").strip().lower()
+if "@" in email and "." in email:
+    print("Email is accepted!")
+else: 
+    print("Error! please write @ or .")    
