@@ -1,0 +1,6 @@
+workouts = ["bicycle", "ellips", "running"]
+workouts.append("walking")
+new_exercise = input("what exercise you would like to add?")
+workouts.append(new_exercise)
+print(workouts)
+print(f"Today I will have {len(workouts)} exercises")
