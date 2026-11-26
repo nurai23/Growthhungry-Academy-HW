@@ -1,0 +1,2 @@
+clients = ["Alina", "Beka", "Sara", "Dannel"]
+print(clients[0])
