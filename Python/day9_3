@@ -1,2 +1,4 @@
 clients = ["Alina", "Beka", "Sara", "Dannel"]
-print(clients[0])
+print(clients[0],clients[-1])
+clients[2] = "Timur"
+print(clients)
